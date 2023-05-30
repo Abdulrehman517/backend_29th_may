@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head></head>
+    <body style="font-family: 'Open Sans', Arial, sans-serif;letter-spacing:.01px">
+        <style>
+        </style>
+        <h3>
+            <% if (content && content['header'] && content['header'].includes('\n')) {
+                const guestListArray = content['header'].split('\n');
+                guestListArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['header']) { %>
+                <%= content['header'] %>
+            <% } %>
+        </h3>
+        <p>
+            <% if (content && content['important'] && content['important'].includes('\n')) {
+                const guestListArray = content['important'].split('\n');
+                guestListArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['important']) { %>
+                <%= content['important'] %>
+            <% } %>
+        </p>        
+        <img src="<%= image %>" alt="Creative Design">
+    </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head></head>
+    <body style="font-family: 'Open Sans', Arial, sans-serif;">
+        <style>
+        </style>
+        <p>Hi  <%= djName %>,</p>
+        <p>Below is the list of details for Hard Rock bookings and your confirmation details. Please confirm you got this email by clicking on the green button below, Let me know if you have any questions.</p>
+        <h3>
+            <% if (content && content['header'] && content['header'].includes('\n')) {
+                const guestListArray = content['header'].split('\n');
+                guestListArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['header']) { %>
+                <%= content['header'] %>
+            <% } %>
+        </h3>
+
+
+        <h3> <%= djName %> @ <%= venueName %>  <%= formattedDate %></h3>
+        <h3>Set Times - <%= startTime %>  to   <%= endTime %></h3>
+        <p><%= setValue %></p>
+        <h5 style="font-size: 12px;">Radius Clause:</h5>
+        <p>
+            <% if (content && content['radius'] && content['radius'].includes('\n')) {
+                const guestListArray = content['radius'].split('\n');
+                guestListArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['radius']) { %>
+                <%= content['radius'] %>
+            <% } %>
+        </p>
+        <h5 style="font-size: 12px;">Fee Structure:</h5>
+        <p>Saturdays @ Hard Rock</p>
+        <% if(setType == 3) {%>
+        <p>
+            Opening Slot: $0 fee. The radius clause applies. Option for a free bottle of Tito's Vodka or Herradura Tequila only for this slot, since there is no fee. You will need to tip your server $50 though, so keep that in mind. I recommend you get your friends to share in the bottle to handle a tip for you.If the set goes well, based on feedback from Hard Rock and Eventvibe management, we can discuss future bookings.
+        </p>
+        <% } else if (setType != 3) {%> 
+            <% if (djFee != ''){ %>
+                <p>Fee is: $ <%= djFee %> </p>
+            <% } %>
+            <p>
+                <% if (content && content['fee_structure'] && content['fee_structure'].includes('\n')) {
+                    const guestListArray = content['fee_structure'].split('\n');
+                    guestListArray.forEach((line) => { %>
+                        <%  if (line !=='') { %>
+                            <%= line %><br />
+                        <%  } %>
+                    <% });
+                } else if (content && content['fee_structure']) { %>
+                    <%= content['fee_structure'] %>
+                <% } %>
+            </p>
+        <% } %>
+        <h5 style="font-size: 12px;">IMPORTANT:</h5>
+        <p>
+            <% if (content && content['important'] && content['important'].includes('\n')) {
+                const guestListArray = content['important'].split('\n');
+                guestListArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['important']) { %>
+                <%= content['important'] %>
+            <% } %>
+        </p>
+        <h5 style="font-size: 12px;">Guest List:<% if (content && content['guest_list_header']) { %> <%= content['guest_list_header'] %> <% }     %></h5>
+        <p>
+            <% if (content && content['guest_list'] && content['guest_list'].includes('\n')) {
+                const guestListArray = content['guest_list'].split('\n');
+                guestListArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['guest_list']) { %>
+                <%= content['guest_list'] %>
+            <% } %>
+        </p>
+        <h5 style="font-size: 12px;">Opportunities</h5>
+        <p>
+            <% if (content && content['opportunities'] && content['opportunities'].includes('\n')) {
+                const opportunitiesArray = content['opportunities'].split('\n');
+                opportunitiesArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['opportunities']) { %>
+                <%= content['opportunities'] %>
+            <% } %>
+        </p>
+        <h5 style="font-size: 12px;">Payment:</h5>
+        <p>
+            <% if (content && content['invoicing'] && content['invoicing'].includes('\n')) {
+                const invoicingArray = content['invoicing'].split('\n');
+                invoicingArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['invoicing']) { %>
+                <%= content['invoicing'] %>
+            <% } %>
+        </p>
+        <h5 style="font-size: 12px;"> Set Times:</h5>
+        <p>
+            <% if (content && content['set_times'] && content['set_times'].includes('\n')) {
+                const setTimesArray = content['set_times'].split('\n');
+                setTimesArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['set_times']) { %>
+                <%= content['set_times'] %>
+            <% } %>
+        </p>
+        <h5>
+            <% if (content && content['footer'] && content['footer'].includes('\n')) {
+                const guestListArray = content['footer'].split('\n');
+                guestListArray.forEach((line) => { %>
+                    <%  if (line !=='') { %>
+                        <%= line %><br />
+                    <%  } %>
+                <% });
+            } else if (content && content['footer']) { %>
+                <%= content['footer'] %>
+            <% } %>
+        </h5>
+        <div style="text-align: center;">
+            <a href="http://ec2-52-40-195-176.us-west-2.compute.amazonaws.com/dev_dj/thankyou/<%=djId%>/<%=timesetId%>" style="background-color: #4CAF50; border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">
+                I have read, understand, and agree.
+            </a>
+        </div>
+    </body>
+</html>

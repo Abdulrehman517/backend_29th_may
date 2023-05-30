@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dj-management-381214",
+  "private_key_id": "a0e4a8966e060deee29299eb4ab8617ce6e6dc47",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDA74HexUzUULzP\n0WFVT3cpxXYp7nktiN3f7oAPJCE2pVgkeyRL0BUuMJsA1fU7TojMh/C3gUAp/+mh\nQGcnc/cjzoUg2F3Uz2aLM74nkFpEB4DUXffytQOOLX8lc5t/gYOy2cwVmhDvxoOl\nIT7zxI4y9QuKvoOJP0KjWCJQkdNf/6AHQCoHZ22rIuisP7903i2vUCC/aifeGeTJ\njmwgaSbGanfaR5OuDlwfQK+ATPnBiHFNjnZL8BlhGXbDoIhyRuTAr6WQzRtXaTF8\n9G0hHfa29LDC5zKQ2//wKm885vCdbDgk6JeoksSzZ5p0TEAd0gE3gwqiYK+ujyWy\nRvf6pW25AgMBAAECggEANG2hO/kffJ6IAG0kZvtWJWq8Rn7APShxKpX0BKlLwT7D\nKf6wiU19Q/T/WgXKQxh/Qh06w5MC7abWRPRsU6NGqFtJf/hr3xWRBwjDhprKfKwR\nTSRP6YtY8PzaDUJSIh7+u85FkCUyrwWh5nCXW8Sw45YFUemdcuFW6W5cvMozx2UF\nqphjK3D468qYF5j4Gl2WD6L63SQa7Ap7ALATJw6ZzVoN3rpjpY1p2qlU+xWybJzG\nF5zUyhn2a+C7BVZUQ8m1yx0pNGvu6yqxzGkx3BwDJuIRmlFlGDU+ruQvoc2V7Rq4\nBoYcOis5RQjUkb/Z4PZvCA8/ElEJLY7deCErzOGDJQKBgQDmIhFFCEIk1u1cXerl\nTCT3d9z2jVcfv7dvSKMlvhbAUkZySdN4LHDvqnAialRHg4wD8vY5adt564deDeWv\nqofpT4CPyCTB7R74PxPebafmeMFx7hFNwZS9dFZvl9x7E5uc3JgZuWWush/2ADcl\nR+uieVTQdlvRjKU/KX2u2gdamwKBgQDWnxsA1CJj1AAiFpImg1FRvbWgYhJ0sGl1\nePCf6HwpMGxd3xvE6eN3SzYg1oL1rxzNqMBWbZOlI7unx+T/0gY6wEZEWYKRSdZZ\nZYIrPNtfemYClMvIS76WCs0iY30lEqrqAm/RbudZBDJNNGkdwZzUNM+5yG3eQNj3\nd8WQSB1kOwKBgQCgqHfV8YX7oe/i483wdc/40zz3AoUoLPcqQVNkLehEKyvy7Ycs\nBhpxtlLCM+jSZAuDVkJ+omAOJVdDWgBXOn3XayEdP2Qp3hgYxjBgv7zPMM4bc0+x\nMMtd17HgBexuH6orP/UPQFa0NrYJTu0woZzmuD11qqs/Byj1h0mun5cysQKBgQC8\nPi0nGulW+flr7LQfx4op0eVeWOarJpg5CuyytO1CC1DhPPFUU3jJh1RglQWkjAUN\ndXfN1qpra94KGVAH+aSxHzgCdygIWuUA4AG9/tDC+85BcVUTxyvQ2oR2JyD6xVbX\njW+aGFYeQ4oDIXcZPFpb3j5cSyniiKpE0+6a0EXHRQKBgBPUWCxZFwxGswWlrpQF\niHbjNGwpoA3abQ7vc8T5UOvIKLewzjtY4kq52cY03cjYug4QJL/J/6sA5Idc7/8p\nPfC5iRRH6hhzCqjvhc+Rm/4YyMnaDuB9gbANFVBTHfYkH4X+tmAfVmOavhtzJtjb\nj21a75C9o/12YZcnT0trbfgZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "dj-management@dj-management-381214.iam.gserviceaccount.com",
+  "client_id": "100521911948639826286",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dj-management%40dj-management-381214.iam.gserviceaccount.com"
+}
